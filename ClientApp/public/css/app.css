@@ -1,0 +1,19 @@
+li {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#wetherimg{
+    width: 50px;
+    height: 50px;
+}
+
+#map-div {
+    height:300px;
+    position: inherit;
+}

@@ -1,0 +1,75 @@
+<head>
+    <link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<div class="container">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Update 24X7 Admin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collpase"
+                data-targert="#collapsibleNavbar">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+        </div>
+
+        <div class="collpase navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NewsForm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/news/editnews">EditNews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/users/logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">Add News</h3>
+            <br/>
+            <br/>
+            <form class="form-horizontal" role="form" action="/news/addnews" method="POST">
+                <div class="wrap-input100">
+                    <input class="input100" type="text" name="title">
+                    <span class="focus-input100" data-placeholder="Title"></span>
+                </div>
+                <div class="wrap-input100">
+                    <input class="input100" type="text" name="description">
+                    <span class="focus-input100" data-placeholder="Description"></span>
+                </div>
+                <div class="wrap-input100">
+                    <input class="input100" type="text" name="url">
+                    <span class="focus-input100" data-placeholder="Url"></span>
+                </div>
+                <div class="wrap-input100">
+                    <input class="input100" type="text" name="urltoimg">
+                    <span class="focus-input100" data-placeholder="Url To Image"></span>
+                </div>
+                <div class="wrap-input100">
+                    <input class="input100" type="text" name="published">
+                    <span class="focus-input100" data-placeholder="Published At"></span>
+                </div>
+                <hr/>
+                <div class="login100-form-btn">
+                    <button type="submit" name="submit" class="btn btn-primary">Add</button>
+                    <button type="reset" name="reset" class="btn btn-warning">Reset</button>
+                </div>		
+                <hr/>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="../vendor/bootstrap/js/popper.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
